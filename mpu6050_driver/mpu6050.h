@@ -6,6 +6,12 @@
 
 #define MPU6050_ADDR 0x68
 
+#define MPU6050_REG_PWR_MGMT_1    0x6B
+#define MPU6050_REG_ACCEL_XOUT_H  0x3B
+#define MPU6050_REG_GYRO_XOUT_H   0x43
+#define MPU6050_REG_TEMP_OUT_H    0x41
+#define MPU6050_REG_ACCEL_CONFIG  0x1C
+
 typedef struct imu6050 {
     // configuração do I2C
     i2c_inst_t *i2c;
